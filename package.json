@@ -7,7 +7,7 @@
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build",
+    "build": "mkdir -p public && cp ./index.html public/",
     "render-build":"npm install && npm run build"
   },
   "keywords": [],
@@ -17,3 +17,5 @@
     "concurrently": "^8.2.0"
   }
 }
+mongodb+srv://aniraannu:Sanjujoy1805@cluster0.3ppz1.mongodb.net/googlebooks?retryWrites=true&w=majority&appName=Cluster0
+mongodb+srv://<username>:<password>@cluster0.5k55w.mongodb.net/<dbname>?retryWrites=true&w=majority
