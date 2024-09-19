@@ -17,5 +17,3 @@
     "concurrently": "^8.2.0"
   }
 }
-mongodb+srv://aniraannu:Sanjujoy1805@cluster0.3ppz1.mongodb.net/googlebooks?retryWrites=true&w=majority&appName=Cluster0
-mongodb+srv://<username>:<password>@cluster0.5k55w.mongodb.net/<dbname>?retryWrites=true&w=majority
