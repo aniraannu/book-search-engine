@@ -18,8 +18,10 @@ const PORT = process.env.PORT || 3001;
 
 const startServer = async () => {
   await server.start();
+
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
+
   app.use("/graphql", expressMiddleware(server, { context: authMiddleware }));
 
   // if we're in production, serve client/build as static assets
